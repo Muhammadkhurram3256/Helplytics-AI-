@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Helplytics AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/dashboard.css">
+</head>
+<body class="dashboard-page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo2.png" alt="Helplytics AI Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="dashboard.html" class="nav-link nav-active">Dashboard</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="create-request.html" class="nav-link">Create Request</a>
+        <a href="ai-center.html" class="nav-link">AI Center</a>
+      </nav>
+      <a href="profile.html" class="btn btn-secondary">Ayesha Khan</a>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="container">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <span class="label-tag">DASHBOARD</span>
+        <h1 style="font-size: 36px; font-weight: 800; margin-bottom: var(--space-sm);">Welcome back, Ayesha.</h1>
+        <p style="color: rgba(255,255,255,0.65); font-size: 16px;">Here's what's happening in your community.</p>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-label">Requests Posted</span>
+          <span class="stat-value">3</span>
+          <span class="stat-desc">Active in the feed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Requests Solved</span>
+          <span class="stat-value">2</span>
+          <span class="stat-desc">Marked as resolved</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Trust Score</span>
+          <span class="stat-value" style="color: var(--color-accent);">100%</span>
+          <span class="stat-desc">Community verified</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Contributions</span>
+          <span class="stat-value">35</span>
+          <span class="stat-desc">Help interactions</span>
+        </div>
+      </div>
+
+      <!-- Dashboard Grid -->
+      <div class="dashboard-grid">
+
+        <!-- Left: Recent Requests -->
+        <div class="card">
+          <div class="section-header" style="margin-bottom: var(--space-md);">
+            <h2 style="font-size: 18px; font-weight: 700; color: var(--color-dark);">Recent Requests</h2>
+            <a href="explore.html" class="text-accent text-sm" style="font-weight: 600;">View all →</a>
+          </div>
+
+          <div class="request-list-item">
+            <div>
+              <div class="request-list-title">Need feedback on my Figma prototype</div>
+              <div class="badge-row" style="margin-top: 4px;">
+                <span class="badge badge-category">UI/UX</span>
+                <span class="badge badge-high">Urgent</span>
+                <span class="badge badge-open">Open</span>
+              </div>
+            </div>
+            <a href="request-detail.html" class="btn btn-outline btn-sm">View</a>
+          </div>
+
+          <div class="request-list-item">
+            <div>
+              <div class="request-list-title">React state management guidance</div>
+              <div class="badge-row" style="margin-top: 4px;">
+                <span class="badge badge-category">Web Dev</span>
+                <span class="badge badge-medium">Medium</span>
+                <span class="badge badge-open">Open</span>
+              </div>
+            </div>
+            <a href="request-detail.html" class="btn btn-outline btn-sm">View</a>
+          </div>
+
+          <div class="request-list-item">
+            <div>
+              <div class="request-list-title">Portfolio review before design interview</div>
+              <div class="badge-row" style="margin-top: 4px;">
+                <span class="badge badge-category">Career</span>
+                <span class="badge badge-low">Low</span>
+                <span class="badge badge-solved">Solved</span>
+              </div>
+            </div>
+            <a href="request-detail.html" class="btn btn-outline btn-sm">View</a>
+          </div>
+
+          <div class="request-list-item">
+            <div>
+              <div class="request-list-title">CSS Grid layout help for responsive cards</div>
+              <div class="badge-row" style="margin-top: 4px;">
+                <span class="badge badge-category">CSS</span>
+                <span class="badge badge-medium">Medium</span>
+                <span class="badge badge-solved">Solved</span>
+              </div>
+            </div>
+            <a href="request-detail.html" class="btn btn-outline btn-sm">View</a>
+          </div>
+
+        </div>
+
+        <!-- Right: AI Insights + Quick Actions -->
+        <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+
+          <div class="card">
+            <h2 style="font-size: 18px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-md);">AI Insights</h2>
+            <div class="ai-insight-row">
+              <div class="ai-insight-label">Trend Pulse</div>
+              <div class="ai-insight-value">Web Development requests up 34% this week</div>
+            </div>
+            <div class="ai-insight-row">
+              <div class="ai-insight-label">Urgency Watch</div>
+              <div class="ai-insight-value">2 requests need immediate attention</div>
+            </div>
+            <div class="ai-insight-row">
+              <div class="ai-insight-label">Mentor Pool</div>
+              <div class="ai-insight-value">2 top helpers available right now</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 style="font-size: 18px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-md);">Quick Actions</h2>
+            <div class="quick-actions">
+              <a href="create-request.html" class="btn btn-primary btn-full">Post a new request</a>
+              <a href="ai-center.html" class="btn btn-outline btn-full">Visit AI Center</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Helplytics AI is built as a premium-feel, multi-page community support product using HTML and CSS.</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/pages/dashboard.js"></script>
+</body>
+</html>

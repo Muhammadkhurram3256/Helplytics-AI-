@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Request — Helplytics AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/create-request.css">
+</head>
+<body class="create-request-page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo2.png" alt="Helplytics AI Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="create-request.html" class="nav-link nav-active">Create Request</a>
+        <a href="ai-center.html" class="nav-link">AI Center</a>
+      </nav>
+      <a href="profile.html" class="btn btn-secondary">Ayesha Khan</a>
+    </div>
+  </header>
+
+  <main class="create-request-main">
+    <div class="container">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <span class="label-tag">CREATE REQUEST</span>
+        <h1 style="font-size: 30px; font-weight: 800; margin-bottom: var(--space-sm);">Turn a rough problem into a clear help request.</h1>
+        <p style="color: rgba(255,255,255,0.65); font-size: 15px;">Describe what you need — the AI will help structure, categorize, and improve it for the community.</p>
+      </div>
+
+      <div class="create-request-grid">
+
+        <!-- Left: Form -->
+        <div class="card">
+          <span class="label-tag">YOUR REQUEST</span>
+          <h2 style="font-size: 20px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-lg);">Describe what you need help with</h2>
+
+          <div class="form-group">
+            <label class="form-label">Request title</label>
+            <input type="text" class="form-input" placeholder="e.g. Need feedback on Figma prototype before deadline">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Full description</label>
+            <textarea class="form-textarea" placeholder="Explain your situation in detail — what you've tried, what you're stuck on, and what kind of help you need..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Tags (comma separated)</label>
+            <input type="text" class="form-input" placeholder="e.g. Figma, UI Review, Prototyping">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Category</label>
+            <select class="form-select">
+              <option>Select a category</option>
+              <option>UI/UX Design</option>
+              <option>Web Development</option>
+              <option>Career</option>
+              <option>Data Science</option>
+              <option>Mobile Dev</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Urgency level</label>
+            <select class="form-select">
+              <option>Select urgency</option>
+              <option>Urgent — I need help within hours</option>
+              <option>Medium — I need help within a day</option>
+              <option>Low — This can wait a few days</option>
+            </select>
+          </div>
+
+          <div class="form-btn-row">
+            <a href="#" class="btn btn-outline">Apply AI suggestions</a>
+            <a href="explore.html" class="btn btn-primary">Publish request</a>
+          </div>
+        </div>
+
+        <!-- Right: AI Assistant -->
+        <div class="ai-right-card card">
+          <div class="flex align-center gap-sm mb-md">
+            <div class="ai-avatar">AI</div>
+            <div>
+              <span class="label-tag" style="margin-bottom: 0;">AI ASSISTANT</span>
+            </div>
+          </div>
+          <h2 style="font-size: 18px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-lg);">Smart request guidance</h2>
+
+          <div class="ai-row">
+            <span class="ai-row-label">Suggested category</span>
+            <span class="ai-row-val text-accent">UI/UX Design</span>
+          </div>
+          <div class="ai-row">
+            <span class="ai-row-label">Detected urgency</span>
+            <span class="ai-row-val"><span class="badge badge-high">Urgent</span></span>
+          </div>
+          <div class="ai-row">
+            <span class="ai-row-label">Suggested tags</span>
+            <div style="text-align: right;">
+              <span class="tag-pill">Figma</span>
+              <span class="tag-pill">UI Review</span>
+              <span class="tag-pill">Feedback</span>
+            </div>
+          </div>
+          <div class="ai-row" style="flex-direction: column; align-items: flex-start; gap: var(--space-sm);">
+            <span class="ai-row-label">Rewrite suggestion</span>
+            <p style="font-size: 13px; color: var(--color-muted); line-height: 1.6; background: rgba(42,157,143,0.06); border-radius: var(--radius-sm); padding: var(--space-sm); border-left: 3px solid var(--color-accent);">
+              "Looking for urgent feedback on a Figma mobile app prototype ahead of a hackathon submission. Would appreciate a quick review of the user flow and visual hierarchy."
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Helplytics AI is built as a premium-feel, multi-page community support product using HTML and CSS.</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/pages/create-request.js"></script>
+</body>
+</html>

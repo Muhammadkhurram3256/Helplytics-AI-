@@ -1,0 +1,56 @@
+.leaderboard-page {
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+.leaderboard-main {
+  padding: var(--space-xl) 0 var(--space-2xl);
+}
+
+.leaderboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.progress-row {
+  margin-bottom: var(--space-md);
+}
+
+.progress-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.progress-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-dark);
+}
+
+.progress-pct {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--color-accent);
+}
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.badge-achievement {
+  background: linear-gradient(135deg, rgba(42,157,143,0.12), rgba(42,157,143,0.04));
+  border: 1px solid rgba(42,157,143,0.3);
+  color: var(--color-accent);
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — Helplytics AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/profile.css">
+</head>
+<body class="profile-page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo2.png" alt="Helplytics AI Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="onboarding.html" class="nav-link">Onboarding</a>
+        <a href="profile.html" class="nav-link nav-active">Profile</a>
+      </nav>
+      <a href="auth.html" class="btn btn-secondary">Sign out</a>
+    </div>
+  </header>
+
+  <main class="profile-main">
+    <div class="container">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="flex align-center gap-lg mb-md">
+          <div class="avatar avatar-teal" style="width: 64px; height: 64px; font-size: 22px;">AK</div>
+          <div>
+            <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 4px;">Ayesha Khan</h1>
+            <p style="color: rgba(255,255,255,0.65); font-size: 15px;">Can Help · Karachi, Pakistan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-grid">
+
+        <!-- Left: Public Profile -->
+        <div class="card">
+          <span class="label-tag">PUBLIC PROFILE</span>
+          <h2 style="font-size: 18px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-lg);">Skills and reputation</h2>
+
+          <div class="profile-stat-row">
+            <span class="profile-stat-label">Trust Score</span>
+            <span class="profile-stat-val">100%</span>
+          </div>
+          <div class="profile-stat-row">
+            <span class="profile-stat-label">Contributions</span>
+            <span class="profile-stat-val">35</span>
+          </div>
+          <div class="profile-stat-row">
+            <span class="profile-stat-label">Requests Posted</span>
+            <span class="profile-stat-val">3</span>
+          </div>
+          <div class="profile-stat-row">
+            <span class="profile-stat-label">Requests Solved</span>
+            <span class="profile-stat-val">2</span>
+          </div>
+
+          <div class="skills-section">
+            <div class="skills-section-label">Skills</div>
+            <div class="tag-pills">
+              <span class="tag-pill">Figma</span>
+              <span class="tag-pill">UI/UX Design</span>
+              <span class="tag-pill">HTML/CSS</span>
+              <span class="tag-pill">Career Guidance</span>
+              <span class="tag-pill">Prototyping</span>
+            </div>
+          </div>
+
+          <div class="skills-section" style="margin-top: var(--space-md);">
+            <div class="skills-section-label">Badges</div>
+            <div class="badge-row flex-wrap">
+              <span class="badge badge-solved">Design Ally</span>
+              <span class="badge badge-solved">Fast Responder</span>
+              <span class="badge badge-solved">Top Mentor</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Edit Profile -->
+        <div class="card">
+          <span class="label-tag">EDIT PROFILE</span>
+          <h2 style="font-size: 18px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-lg);">Update your identity</h2>
+
+          <div class="form-row form-group">
+            <div>
+              <label class="form-label">Full name</label>
+              <input type="text" class="form-input" value="Ayesha Khan">
+            </div>
+            <div>
+              <label class="form-label">Location</label>
+              <input type="text" class="form-input" value="Karachi, Pakistan">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Skills</label>
+            <input type="text" class="form-input" value="Figma, UI/UX Design, HTML/CSS, Career Guidance">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Interests</label>
+            <input type="text" class="form-input" value="Hackathons, Community Building, Design Systems">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Role</label>
+            <select class="form-select">
+              <option selected>Can Help</option>
+              <option>Need Help</option>
+              <option>Both</option>
+            </select>
+          </div>
+
+          <a href="#" class="btn btn-primary btn-full" style="margin-top: var(--space-md);">Save profile</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Helplytics AI is built as a premium-feel, multi-page community support product using HTML and CSS.</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/pages/profile.js"></script>
+</body>
+</html>

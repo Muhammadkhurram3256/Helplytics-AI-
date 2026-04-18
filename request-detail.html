@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Detail — Helplytics AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/request-detail.css">
+</head>
+<body class="request-detail-page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo2.png" alt="Helplytics AI Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="messages.html" class="nav-link">Messages</a>
+      </nav>
+      <a href="profile.html" class="btn btn-secondary">Ayesha Khan</a>
+    </div>
+  </header>
+
+  <main class="request-detail-main">
+    <div class="container">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="badge-row mb-md">
+          <span class="badge badge-category">UI/UX</span>
+          <span class="badge badge-high">Urgent</span>
+          <span class="badge badge-open">Open</span>
+        </div>
+        <h1 style="font-size: 28px; font-weight: 800; margin-bottom: var(--space-sm);">Need feedback on my Figma prototype before submission</h1>
+        <p style="color: rgba(255,255,255,0.65); font-size: 15px;">Posted by Ayesha Khan · Karachi · 3 helpers ready</p>
+      </div>
+
+      <div class="request-detail-grid">
+
+        <!-- Left: Main content -->
+        <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+
+          <!-- AI Summary -->
+          <div class="card">
+            <div class="ai-header">
+              <div class="ai-avatar" style="width:36px;height:36px;background:linear-gradient(135deg,var(--color-accent),#1a7a6e);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:13px;">AI</div>
+              <span class="label-tag" style="margin-bottom:0;">AI SUMMARY</span>
+            </div>
+            <p style="font-size: 14px; color: var(--color-muted); line-height: 1.7; margin-bottom: var(--space-md);">
+              The requester is seeking time-sensitive design feedback on a Figma prototype for a hackathon submission. They need a critique focused on user flow clarity and visual hierarchy — a task suited to experienced UI/UX mentors with prototyping expertise.
+            </p>
+            <div class="tag-pills">
+              <span class="tag-pill">Figma</span>
+              <span class="tag-pill">UI Review</span>
+              <span class="tag-pill">Prototyping</span>
+              <span class="tag-pill">Hackathon</span>
+              <span class="tag-pill">User Flow</span>
+            </div>
+          </div>
+
+          <!-- Full description -->
+          <div class="card">
+            <h2 style="font-size: 18px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-md);">Full Request</h2>
+            <p style="font-size: 14px; color: var(--color-text); line-height: 1.8;">
+              I'm working on a mobile app design for a hackathon and the submission deadline is tomorrow. I've built out the core screens in Figma but I'm not confident about the user flow — particularly the onboarding section and the main dashboard layout.
+            </p>
+            <p style="font-size: 14px; color: var(--color-text); line-height: 1.8; margin-top: var(--space-md);">
+              I'd love feedback on: (1) whether the onboarding flow feels intuitive, (2) if the visual hierarchy on the dashboard is clear enough, and (3) any quick wins I can implement before submission. I'm using a teal and dark theme similar to a modern SaaS product.
+            </p>
+          </div>
+
+          <!-- Actions card (mobile-second) -->
+          <div class="card">
+            <span class="label-tag">ACTIONS</span>
+            <div class="action-btns">
+              <a href="messages.html" class="btn btn-primary">I can help</a>
+              <a href="explore.html" class="btn btn-secondary">Mark as solved</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Requester + Helpers -->
+        <div class="right-col">
+
+          <!-- Requester -->
+          <div class="card">
+            <span class="label-tag">REQUESTER</span>
+            <div class="requester-block">
+              <div class="avatar avatar-teal">AK</div>
+              <div>
+                <div class="requester-name">Ayesha Khan</div>
+                <div class="requester-meta">Karachi · Trust Score 100%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Helpers -->
+          <div class="card">
+            <span class="label-tag">HELPERS</span>
+            <h2 style="font-size: 16px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-md);">People ready to support</h2>
+
+            <div class="helper-row">
+              <div class="avatar avatar-dark">HA</div>
+              <div class="helper-info">
+                <div class="helper-name">Hassan Ali</div>
+                <div class="helper-skills">React, Figma, UI/UX</div>
+              </div>
+              <span class="badge badge-solved">88%</span>
+            </div>
+
+            <div class="helper-row">
+              <div class="avatar avatar-amber">SN</div>
+              <div class="helper-info">
+                <div class="helper-name">Sara Noor</div>
+                <div class="helper-skills">Design Systems, Career</div>
+              </div>
+              <span class="badge badge-solved">74%</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Helplytics AI is built as a premium-feel, multi-page community support product using HTML and CSS.</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/pages/request-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding — Helplytics AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/onboarding.css">
+</head>
+<body class="onboarding-page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo2.png" alt="Helplytics AI Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+        <a href="ai-center.html" class="nav-link">AI Center</a>
+      </nav>
+      <a href="auth.html" class="btn btn-primary">Join the platform</a>
+    </div>
+  </header>
+
+  <main class="onboarding-main">
+    <div class="container">
+      <div class="onboarding-grid">
+
+        <!-- Left: Dark card with steps -->
+        <div class="onboarding-dark-card">
+          <span class="label-tag" style="color: rgba(255,255,255,0.45);">SETUP</span>
+          <h2>Set up your helper identity.</h2>
+          <p>Tell us who you are and what you know. The AI will suggest how you can best contribute to the community.</p>
+
+          <div class="step-indicators">
+            <div class="step-item active">
+              <div class="step-num">1</div>
+              <span class="step-label">Basic Info</span>
+            </div>
+            <div class="step-item">
+              <div class="step-num">2</div>
+              <span class="step-label">Skills</span>
+            </div>
+            <div class="step-item">
+              <div class="step-num">3</div>
+              <span class="step-label">Interests</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="onboarding-form-card">
+          <span class="label-tag">YOUR PROFILE</span>
+          <h2 style="font-size: 22px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-lg);">Build your community identity</h2>
+
+          <div class="form-group">
+            <label class="form-label">Full name</label>
+            <input type="text" class="form-input" placeholder="Ayesha Khan" value="Ayesha Khan">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Location</label>
+            <input type="text" class="form-input" placeholder="City, Country" value="Karachi, Pakistan">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Your skills</label>
+            <input type="text" class="form-input" placeholder="Figma, UI/UX, HTML/CSS" value="Figma, UI/UX, HTML/CSS">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Your interests</label>
+            <input type="text" class="form-input" placeholder="Hackathons, Community Building" value="Hackathons, Community Building">
+          </div>
+
+          <!-- AI Suggestion Panel -->
+          <div class="card-outlined" style="margin-top: var(--space-md); margin-bottom: var(--space-lg);">
+            <span class="label-tag">AI SUGGESTION</span>
+            <p style="font-size: 13px; color: var(--color-muted); margin-bottom: var(--space-sm);">Skills you can offer help with:</p>
+            <div class="ai-tags mb-md">
+              <span class="tag-pill">Figma</span>
+              <span class="tag-pill">UI/UX Design</span>
+              <span class="tag-pill">Prototyping</span>
+              <span class="tag-pill">HTML/CSS</span>
+              <span class="tag-pill">Career Guidance</span>
+            </div>
+            <p style="font-size: 13px; color: var(--color-muted); margin-bottom: var(--space-sm);">Areas you might need help in:</p>
+            <div class="ai-tags">
+              <span class="tag-pill">React</span>
+              <span class="tag-pill">Backend Dev</span>
+              <span class="tag-pill">Data Science</span>
+            </div>
+          </div>
+
+          <a href="dashboard.html" class="btn btn-primary btn-full">Complete setup</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Helplytics AI is built as a premium-feel, multi-page community support product using HTML and CSS.</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/pages/onboarding.js"></script>
+</body>
+</html>

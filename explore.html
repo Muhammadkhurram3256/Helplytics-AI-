@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore — Helplytics AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/explore.css">
+</head>
+<body class="explore-page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo2.png" alt="Helplytics AI Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="explore.html" class="nav-link nav-active">Explore</a>
+        <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+        <a href="notifications.html" class="nav-link">Notifications</a>
+      </nav>
+      <a href="profile.html" class="btn btn-secondary">Ayesha Khan</a>
+    </div>
+  </header>
+
+  <main class="explore-main">
+    <div class="container">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <span class="label-tag">EXPLORE</span>
+        <h1 style="font-size: 30px; font-weight: 800; margin-bottom: var(--space-sm);">Browse help requests with filterable community context.</h1>
+        <p style="color: rgba(255,255,255,0.65); font-size: 15px;">Discover people who need your skills and those who can help you grow.</p>
+      </div>
+
+      <div class="explore-grid">
+
+        <!-- Left: Filter sidebar -->
+        <div class="filter-sidebar">
+          <div class="card">
+            <span class="label-tag">FILTERS</span>
+            <div class="filter-heading">Refine the feed</div>
+
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select class="form-select">
+                <option>All Categories</option>
+                <option>UI/UX Design</option>
+                <option>Web Development</option>
+                <option>Career</option>
+                <option>Data Science</option>
+                <option>Mobile Dev</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Urgency</label>
+              <select class="form-select">
+                <option>All Urgencies</option>
+                <option>Urgent</option>
+                <option>Medium</option>
+                <option>Low</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Skills needed</label>
+              <input type="text" class="form-input" placeholder="e.g. Figma, React">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Location</label>
+              <input type="text" class="form-input" placeholder="City or country">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Request feed -->
+        <div class="feed-list">
+
+          <div class="request-card">
+            <div class="badge-row">
+              <span class="badge badge-category">UI/UX</span>
+              <span class="badge badge-high">Urgent</span>
+              <span class="badge badge-open">Open</span>
+            </div>
+            <div class="request-card-title">Need feedback on my Figma prototype before submission</div>
+            <p class="request-card-desc">Working on a mobile app design for a hackathon deadline tomorrow. Looking for a quick critique on the user flow and visual hierarchy.</p>
+            <div class="tag-pills">
+              <span class="tag-pill">Figma</span>
+              <span class="tag-pill">Prototyping</span>
+              <span class="tag-pill">UI Review</span>
+            </div>
+            <div class="request-card-meta">
+              <span>Ayesha Khan</span>
+              <span>·</span>
+              <span>Karachi</span>
+              <span>·</span>
+              <span>3 helpers ready</span>
+            </div>
+            <a href="request-detail.html" class="btn btn-primary btn-sm" style="align-self: flex-start;">Open details</a>
+          </div>
+
+          <div class="request-card">
+            <div class="badge-row">
+              <span class="badge badge-category">Web Dev</span>
+              <span class="badge badge-medium">Medium</span>
+              <span class="badge badge-open">Open</span>
+            </div>
+            <div class="request-card-title">React state management getting complicated — need guidance</div>
+            <p class="request-card-desc">My component tree is growing and prop-drilling is becoming unmanageable. Need advice on whether to use Context or Redux for this project.</p>
+            <div class="tag-pills">
+              <span class="tag-pill">React</span>
+              <span class="tag-pill">State Management</span>
+              <span class="tag-pill">JavaScript</span>
+            </div>
+            <div class="request-card-meta">
+              <span>Hassan Ali</span>
+              <span>·</span>
+              <span>Lahore</span>
+              <span>·</span>
+              <span>2 helpers ready</span>
+            </div>
+            <a href="request-detail.html" class="btn btn-primary btn-sm" style="align-self: flex-start;">Open details</a>
+          </div>
+
+          <div class="request-card">
+            <div class="badge-row">
+              <span class="badge badge-category">Career</span>
+              <span class="badge badge-low">Low</span>
+              <span class="badge badge-solved">Solved</span>
+            </div>
+            <div class="request-card-title">How to prepare for my first UI/UX portfolio review</div>
+            <p class="request-card-desc">I have an interview at a design agency next week. Need advice on what to include in my portfolio and how to present my process.</p>
+            <div class="tag-pills">
+              <span class="tag-pill">Portfolio</span>
+              <span class="tag-pill">Design Interview</span>
+              <span class="tag-pill">Career</span>
+            </div>
+            <div class="request-card-meta">
+              <span>Sara Noor</span>
+              <span>·</span>
+              <span>Islamabad</span>
+              <span>·</span>
+              <span>5 helpers ready</span>
+            </div>
+            <a href="request-detail.html" class="btn btn-primary btn-sm" style="align-self: flex-start;">Open details</a>
+          </div>
+
+          <div class="request-card">
+            <div class="badge-row">
+              <span class="badge badge-category">Data Science</span>
+              <span class="badge badge-high">Urgent</span>
+              <span class="badge badge-open">Open</span>
+            </div>
+            <div class="request-card-title">Pandas DataFrame merge causing key duplication errors</div>
+            <p class="request-card-desc">Trying to merge two large datasets and getting duplicate keys. Not sure if I should use merge, join, or concat for this use case.</p>
+            <div class="tag-pills">
+              <span class="tag-pill">Python</span>
+              <span class="tag-pill">Pandas</span>
+              <span class="tag-pill">Data Wrangling</span>
+            </div>
+            <div class="request-card-meta">
+              <span>Usman Tariq</span>
+              <span>·</span>
+              <span>Karachi</span>
+              <span>·</span>
+              <span>1 helper ready</span>
+            </div>
+            <a href="request-detail.html" class="btn btn-primary btn-sm" style="align-self: flex-start;">Open details</a>
+          </div>
+
+          <div class="request-card">
+            <div class="badge-row">
+              <span class="badge badge-category">Mobile Dev</span>
+              <span class="badge badge-medium">Medium</span>
+              <span class="badge badge-open">Open</span>
+            </div>
+            <div class="request-card-title">Flutter navigation between screens not working with named routes</div>
+            <p class="request-card-desc">I set up named routes in Flutter but pushing to a new screen keeps throwing a null error. The route is registered in MaterialApp but still fails.</p>
+            <div class="tag-pills">
+              <span class="tag-pill">Flutter</span>
+              <span class="tag-pill">Dart</span>
+              <span class="tag-pill">Navigation</span>
+            </div>
+            <div class="request-card-meta">
+              <span>Zara Ahmed</span>
+              <span>·</span>
+              <span>Lahore</span>
+              <span>·</span>
+              <span>0 helpers yet</span>
+            </div>
+            <a href="request-detail.html" class="btn btn-primary btn-sm" style="align-self: flex-start;">Open details</a>
+          </div>
+
+          <div class="request-card">
+            <div class="badge-row">
+              <span class="badge badge-category">CSS</span>
+              <span class="badge badge-low">Low</span>
+              <span class="badge badge-solved">Solved</span>
+            </div>
+            <div class="request-card-title">CSS Grid layout help for responsive card grid</div>
+            <p class="request-card-desc">Building a card grid that needs to collapse from 3 columns to 1 on mobile. Grid auto-fill isn't behaving as expected with min-content.</p>
+            <div class="tag-pills">
+              <span class="tag-pill">CSS Grid</span>
+              <span class="tag-pill">Responsive</span>
+              <span class="tag-pill">HTML</span>
+            </div>
+            <div class="request-card-meta">
+              <span>Bilal Raza</span>
+              <span>·</span>
+              <span>Rawalpindi</span>
+              <span>·</span>
+              <span>4 helpers</span>
+            </div>
+            <a href="request-detail.html" class="btn btn-primary btn-sm" style="align-self: flex-start;">Open details</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Helplytics AI is built as a premium-feel, multi-page community support product using HTML and CSS.</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/pages/explore.js"></script>
+</body>
+</html>

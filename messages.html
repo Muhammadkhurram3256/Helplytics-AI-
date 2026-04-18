@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages — Helplytics AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/messages.css">
+</head>
+<body class="messages-page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo2.png" alt="Helplytics AI Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="messages.html" class="nav-link nav-active">Messages</a>
+      </nav>
+      <a href="profile.html" class="btn btn-secondary">Ayesha Khan</a>
+    </div>
+  </header>
+
+  <main class="messages-main">
+    <div class="container">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <span class="label-tag">MESSAGES</span>
+        <h1 style="font-size: 30px; font-weight: 800; margin-bottom: var(--space-sm);">Connect directly with helpers and requesters.</h1>
+        <p style="color: rgba(255,255,255,0.65); font-size: 15px;">All your community conversations in one place.</p>
+      </div>
+
+      <div class="messages-grid">
+
+        <!-- Left: Conversation list -->
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div style="padding: var(--space-md) var(--space-lg); border-bottom: 1px solid var(--color-border);">
+            <h2 style="font-size: 16px; font-weight: 700; color: var(--color-dark);">Conversations</h2>
+          </div>
+          <div class="conv-list">
+
+            <div class="conv-item active">
+              <div class="avatar avatar-dark">HA</div>
+              <div class="conv-info">
+                <div class="conv-name">Hassan Ali</div>
+                <div class="conv-preview">Sure, I can take a look at your Figma file tonight</div>
+              </div>
+              <div class="conv-meta">
+                <span class="conv-time">2m ago</span>
+                <div class="unread-dot"></div>
+              </div>
+            </div>
+
+            <div class="conv-item">
+              <div class="avatar avatar-amber">SN</div>
+              <div class="conv-info">
+                <div class="conv-name">Sara Noor</div>
+                <div class="conv-preview">Your portfolio looks great! Just a few suggestions...</div>
+              </div>
+              <div class="conv-meta">
+                <span class="conv-time">1h ago</span>
+              </div>
+            </div>
+
+            <div class="conv-item">
+              <div class="avatar avatar-green">UT</div>
+              <div class="conv-info">
+                <div class="conv-name">Usman Tariq</div>
+                <div class="conv-preview">Thanks for helping with the Pandas merge issue!</div>
+              </div>
+              <div class="conv-meta">
+                <span class="conv-time">3h ago</span>
+              </div>
+            </div>
+
+            <div class="conv-item">
+              <div class="avatar avatar-red">ZA</div>
+              <div class="conv-info">
+                <div class="conv-name">Zara Ahmed</div>
+                <div class="conv-preview">Hey, are you available for a quick call?</div>
+              </div>
+              <div class="conv-meta">
+                <span class="conv-time">Yesterday</span>
+                <div class="unread-dot"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Chat area -->
+        <div class="chat-area">
+          <div class="chat-header">
+            <div class="avatar avatar-dark">HA</div>
+            <div>
+              <div class="chat-header-name">Hassan Ali</div>
+              <div class="chat-header-status">Online · Lahore</div>
+            </div>
+          </div>
+
+          <div class="chat-messages">
+
+            <div class="msg-row msg-row-received">
+              <div class="msg-bubble msg-bubble-received">Hey Ayesha! I saw your Figma request on the platform. I've done a few hackathon projects before — happy to help review your prototype.</div>
+              <div class="msg-time">10:14 AM</div>
+            </div>
+
+            <div class="msg-row msg-row-sent">
+              <div class="msg-bubble msg-bubble-sent">That would be amazing! I'm particularly worried about the onboarding flow — it feels a bit long. Can you check the overall structure first?</div>
+              <div class="msg-time">10:16 AM</div>
+            </div>
+
+            <div class="msg-row msg-row-received">
+              <div class="msg-bubble msg-bubble-received">Of course! Share the Figma link and I'll send you detailed notes. I'll focus on flow, hierarchy, and any quick visual wins you can make before tomorrow.</div>
+              <div class="msg-time">10:18 AM</div>
+            </div>
+
+            <div class="msg-row msg-row-sent">
+              <div class="msg-bubble msg-bubble-sent">Sure, I can take a look at your Figma file tonight. Will send feedback within 2 hours!</div>
+              <div class="msg-time">10:20 AM</div>
+            </div>
+
+            <div class="msg-row msg-row-received">
+              <div class="msg-bubble msg-bubble-received">Perfect. Really appreciate it — this means a lot before the deadline!</div>
+              <div class="msg-time">10:21 AM</div>
+            </div>
+
+          </div>
+
+          <div class="chat-input-area">
+            <input type="text" class="chat-input" placeholder="Type a message...">
+            <button class="btn btn-primary" style="flex-shrink: 0;">Send</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Helplytics AI is built as a premium-feel, multi-page community support product using HTML and CSS.</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/pages/messages.js"></script>
+</body>
+</html>

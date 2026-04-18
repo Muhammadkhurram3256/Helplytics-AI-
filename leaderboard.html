@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard — Helplytics AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/leaderboard.css">
+</head>
+<body class="leaderboard-page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo2.png" alt="Helplytics AI Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="leaderboard.html" class="nav-link nav-active">Leaderboard</a>
+        <a href="notifications.html" class="nav-link">Notifications</a>
+      </nav>
+      <a href="profile.html" class="btn btn-secondary">Ayesha Khan</a>
+    </div>
+  </header>
+
+  <main class="leaderboard-main">
+    <div class="container">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <span class="label-tag">LEADERBOARD</span>
+        <h1 style="font-size: 30px; font-weight: 800; margin-bottom: var(--space-sm);">Recognize the people who keep the community moving.</h1>
+        <p style="color: rgba(255,255,255,0.65); font-size: 15px;">Trust scores are earned through consistent, verified contributions — not self-reported.</p>
+      </div>
+
+      <div class="leaderboard-grid">
+
+        <!-- Left: Rankings -->
+        <div class="card">
+          <span class="label-tag">TOP HELPERS</span>
+          <h2 style="font-size: 20px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-lg);">Rankings</h2>
+
+          <div class="leader-row">
+            <div class="leader-rank">#1</div>
+            <div class="avatar avatar-teal">AK</div>
+            <div class="leader-info">
+              <div class="leader-name">Ayesha Khan</div>
+              <div class="leader-skills">Figma, UI/UX, HTML/CSS, Career Guidance</div>
+            </div>
+            <div class="leader-score">
+              <div class="leader-score-val">100%</div>
+              <div class="leader-score-sub">35 contributions</div>
+            </div>
+          </div>
+
+          <div class="leader-row">
+            <div class="leader-rank">#2</div>
+            <div class="avatar avatar-dark">HA</div>
+            <div class="leader-info">
+              <div class="leader-name">Hassan Ali</div>
+              <div class="leader-skills">React, JavaScript, Node.js, Figma</div>
+            </div>
+            <div class="leader-score">
+              <div class="leader-score-val">88%</div>
+              <div class="leader-score-sub">24 contributions</div>
+            </div>
+          </div>
+
+          <div class="leader-row">
+            <div class="leader-rank">#3</div>
+            <div class="avatar avatar-amber">SN</div>
+            <div class="leader-info">
+              <div class="leader-name">Sara Noor</div>
+              <div class="leader-skills">Design Systems, Career, Portfolio Review</div>
+            </div>
+            <div class="leader-score">
+              <div class="leader-score-val">74%</div>
+              <div class="leader-score-sub">11 contributions</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Badge system + progress bars -->
+        <div class="card">
+          <span class="label-tag">BADGE SYSTEM</span>
+          <h2 style="font-size: 20px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-lg);">Trust and achievement</h2>
+
+          <!-- Ayesha -->
+          <div class="progress-row">
+            <div class="progress-name">
+              <span class="progress-label">Ayesha Khan</span>
+              <span class="progress-pct">100%</span>
+            </div>
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" style="width: 100%;"></div>
+            </div>
+            <div class="badge-list" style="margin-top: var(--space-sm);">
+              <span class="badge-achievement">Design Ally</span>
+              <span class="badge-achievement">Fast Responder</span>
+              <span class="badge-achievement">Top Mentor</span>
+            </div>
+          </div>
+
+          <hr class="divider">
+
+          <!-- Hassan -->
+          <div class="progress-row">
+            <div class="progress-name">
+              <span class="progress-label">Hassan Ali</span>
+              <span class="progress-pct">88%</span>
+            </div>
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" style="width: 88%;"></div>
+            </div>
+            <div class="badge-list" style="margin-top: var(--space-sm);">
+              <span class="badge-achievement">Code Wizard</span>
+              <span class="badge-achievement">Community Pillar</span>
+            </div>
+          </div>
+
+          <hr class="divider">
+
+          <!-- Sara -->
+          <div class="progress-row">
+            <div class="progress-name">
+              <span class="progress-label">Sara Noor</span>
+              <span class="progress-pct">74%</span>
+            </div>
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" style="width: 74%;"></div>
+            </div>
+            <div class="badge-list" style="margin-top: var(--space-sm);">
+              <span class="badge-achievement">Career Guide</span>
+              <span class="badge-achievement">First Responder</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Helplytics AI is built as a premium-feel, multi-page community support product using HTML and CSS.</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/pages/leaderboard.js"></script>
+</body>
+</html>
